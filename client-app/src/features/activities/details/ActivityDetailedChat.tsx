@@ -1,10 +1,9 @@
 import { observer } from "mobx-react-lite"
-import { Button, Comment, CommentAuthor, CommentAvatar, CommentContent, CommentGroup, CommentMetadata, CommentText, FormTextArea, Header, Loader, Segment } from "semantic-ui-react"
+import { Comment, CommentAuthor, CommentAvatar, CommentContent, CommentGroup, CommentMetadata, CommentText, Header, Loader, Segment } from "semantic-ui-react"
 import { useStore } from "../../../app/stores/store";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { Field, FieldProps, Form, Formik } from "formik";
-import MyTextArea from "../../../app/common/form/MyTextArea";
 import * as Yup from 'yup';
 import { formatDistanceToNow } from "date-fns";
 

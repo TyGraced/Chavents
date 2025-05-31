@@ -4,7 +4,6 @@ import { FormField, Label, Select } from "semantic-ui-react";
 interface Props {
     placeholder: string;
     name: string;
-    // options: {text: string, value: string}[];
     options: any;
     label?: string;
 }
