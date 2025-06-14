@@ -26,7 +26,7 @@ jobs:
       - name: Install deps and build react app
         run: |
           cd client-app
-          npm install
+          npm install --legacey-peer-deps
           npm run build
 
       - name: Set up .NET Core
