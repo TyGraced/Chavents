@@ -37,8 +37,8 @@ app.UseCsp(opt => opt
     .FontSources(s => s.Self().CustomSources("https://fonts.gstatic.com", "data:"))
     .FormActions(s => s.Self())
     .FrameAncestors(s => s.Self())
-    .ImageSources(s => s.Self().CustomSources("blob:", "https://res.cloudinary.com"))
-    .ScriptSources(s => s.Self())
+    .ImageSources(s => s.Self().CustomSources("https://res.cloudinary.com", "blob:"))
+    .ScriptSources(s => s.Self().CustomSources("https://connect.facebook.net"))
 );
 
 if (app.Environment.IsDevelopment())
