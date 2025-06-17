@@ -21,7 +21,7 @@ builder.Services.AddControllers(opt =>
 });
 builder.Services.AddApplicationServices(builder.Configuration);
 builder.Services.AddIdentityServices(builder.Configuration);
-
+builder.Services.AddSingleton(new HttpClient());
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
